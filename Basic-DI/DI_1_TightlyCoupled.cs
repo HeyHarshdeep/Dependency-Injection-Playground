@@ -1,5 +1,6 @@
 ﻿UserInterface UserInterface = new UserInterface();
-UserInterface.GetData();
+UserInterface.SignUp();
+Console.ReadKey();
 public class UserInterface
 {
     private string _username;
@@ -13,7 +14,7 @@ public class UserInterface
         Console.WriteLine("Enter Password");
         _password = Console.ReadLine();
 
-        Console.ReadKey();
+
     }
 
     public void SignUp()
@@ -39,13 +40,13 @@ public class DataAccessSql
 {
     public void SignUp(string userName, string passWord)
     {
-        Console.Write($"Suppose here. Data has been saved to DB with username {userName} password {passWord}");
+        Console.Write($"Data has been saved to SQL with username {userName} password {passWord}");
     }
 }
 public class DataAccessMySql
 {
     public void SignUp(string userName, string passWord)
     {
-
+        Console.Write($"Data has been saved to MySQL with username {userName} password {passWord}");
     }
 }
