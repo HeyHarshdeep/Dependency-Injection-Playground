@@ -9,6 +9,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DI_1_TightlyCoupled", "DI_1
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DI_3_LooseCoupling", "DI_3_LooseCoupling\DI_3_LooseCoupling.csproj", "{69184B8A-2A39-95DE-DAEF-230B07E63CDE}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DI_4_DotNet-Dependency-Injection", "DI_4_DotNet-Dependency-Injection\DI_4_DotNet-Dependency-Injection.csproj", "{112A309A-908B-45D4-97AE-355023BB5F65}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -27,6 +29,10 @@ Global
 		{69184B8A-2A39-95DE-DAEF-230B07E63CDE}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{69184B8A-2A39-95DE-DAEF-230B07E63CDE}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{69184B8A-2A39-95DE-DAEF-230B07E63CDE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{112A309A-908B-45D4-97AE-355023BB5F65}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{112A309A-908B-45D4-97AE-355023BB5F65}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{112A309A-908B-45D4-97AE-355023BB5F65}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{112A309A-908B-45D4-97AE-355023BB5F65}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
