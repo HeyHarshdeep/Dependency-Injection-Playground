@@ -9,13 +9,13 @@ internal class Program
         collection.AddScoped<IndiaTaxCalculator>();
         collection.AddScoped<EuropeTaxCalculator>();
 
-        collection.AddScoped<Func<UserLocation, ITaxCalculator>>(
+        collection.AddScoped<Func<UserLocationEnum, ITaxCalculator>>(
             serviceProvider => key =>
             {
                 switch (key)
                 {
-                    case UserLocation.India: return serviceProvider.GetService<IndiaTaxCalculator>();
-                    case UserLocation.Europe: return serviceProvider.GetService<EuropeTaxCalculator>();
+                    case UserLocationEnum.India: return serviceProvider.GetService<IndiaTaxCalculator>();
+                    case UserLocationEnum.Europe: return serviceProvider.GetService<EuropeTaxCalculator>();
                     default: return null;
                 }
             });
@@ -25,7 +25,7 @@ internal class Program
         var provider = collection.BuildServiceProvider();
 
         var purchase = provider.GetService<Purchase>();
-        var totalCharge = purchase.CheckOut(UserLocation.India);
+        var totalCharge = purchase.CheckOut(UserLocationEnum.India);
         Console.Clear();
         Console.WriteLine(totalCharge);
 

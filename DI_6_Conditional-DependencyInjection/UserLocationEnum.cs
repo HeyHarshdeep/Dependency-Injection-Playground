@@ -1,6 +1,6 @@
 ﻿namespace DI_6_Conditional_DependencyInjection
 {
-    public enum UserLocation
+    public enum UserLocationEnum
     {
         India,
         Europe

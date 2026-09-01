@@ -8,14 +8,14 @@ namespace DI_6_Conditional_DependencyInjection;
 
 public class Purchase
 {
-    private readonly Func<UserLocation, ITaxCalculator> _accessor;
+    private readonly Func<UserLocationEnum, ITaxCalculator> _accessor;
 
-    public Purchase(Func<UserLocation, ITaxCalculator> accessor)
+    public Purchase(Func<UserLocationEnum, ITaxCalculator> accessor)
     {
         _accessor = accessor;
     }
 
-    public int CheckOut(UserLocation location)
+    public int CheckOut(UserLocationEnum location)
     {
         var tax = _accessor(location);
         var total = tax.Calculate() + 100;
